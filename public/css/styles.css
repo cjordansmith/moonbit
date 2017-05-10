@@ -1,0 +1,28 @@
+body {
+  padding-top: 60px;
+  background-image: url(../stars.jpg);
+  background-repeat: repeat;
+  background-position: left;
+}
+.navbar-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a.btn.btn-md.btn-primary {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+a.btn.btn-md.btn-primary:not(:last-child) {
+  margin-right: 12px;
+}
+
+.navbar-inverse {
+  background-color: #2D2D2D;
+}
+
+.jumbotron:not(:last-child) {
+  margin-top: 90px;
+  padding-left:
+}

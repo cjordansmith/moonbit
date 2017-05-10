@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>React Moon - Login</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- javascripts -->
+</head>
+<body>
+  <!-- <div id="app"></div> -->
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>CLIENT/INDEX>HTML</h1>
+      <p>Access token value: <span class="label label-danger"><%- access_token ? access_token : 'NONE' %></span></p>
+      <p>Scope value: <span class="label label-danger"><%- scope ? scope : 'NONE' %></span></p>
+      <a class="btn btn-default" href="/authorize">Get OAuth Token</a>
+      <a class="btn btn-default" href="/fetch_resource">Get Protected Resource</a>
+    </div>
+
+  </div><!-- /.container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- <script src="bundle.js"></script> -->
+
+</body>
+</html>

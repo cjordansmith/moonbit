@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>React Moonbit</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-brand" href="/">MoonBit</div>
+        <a class="btn btn-md btn-primary" href="/">Home</a>
+        <a class="btn btn-md btn-primary" href="/authorize">Get OAuth Token</a>
+        <a class="btn btn-md btn-primary" href="/fetch_resource">Get Protected Resource</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="app"></div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Use your access token to get the protected resource.</h2>
+      <p>Access token value: <span class="label label-danger"><%- access_token ? access_token : 'NONE' %></span></p>
+      <p>Scope value: <span class="label label-danger"><%- scope ? scope : 'NONE' %></span></p>
+
+    </div>
+  </div><!-- /.container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="./js/bundle.js"></script>
+
+</body>
+</html>
