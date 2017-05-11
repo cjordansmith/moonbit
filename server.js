@@ -22,10 +22,12 @@ var authServer = {
 };
 
 // client information
+// local 22846M  14f10fcb0e6b142bcc54260fdb1452ee  http://localhost:9000/callback
+// heroku 228j47  1bbddbb6621fbf47f942b281a315a5e8  https://moonbit.herokuapp.com/callback
 var client = {
-	"client_id": "22846M",
-	"client_secret": "14f10fcb0e6b142bcc54260fdb1452ee",
-	"redirect_uris": ["http://localhost:9000/callback"]
+	"client_id": "228J47",
+	"client_secret": "1bbddbb6621fbf47f942b281a315a5e8",
+	"redirect_uris": ["https://moonbit.herokuapp.com/callback"]
 };
 
 var protectedResource = 'https://api.fitbit.com/1/user/-/profile.json';
@@ -33,7 +35,7 @@ var protectedResource = 'https://api.fitbit.com/1/user/-/profile.json';
 var state = null;
 
 var access_token = null;
-var scope = 'profile activity';
+var scope = 'profile';
 
 //
 // homepage of the my application
